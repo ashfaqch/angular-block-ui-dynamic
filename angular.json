@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "angular-block-ui-dynamic": {
+      "root": "projects/angular-block-ui-dynamic",
+      "sourceRoot": "projects/angular-block-ui-dynamic/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-block-ui-dynamic/tsconfig.lib.json",
+            "project": "projects/angular-block-ui-dynamic/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/angular-block-ui-dynamic/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-block-ui-dynamic/src/test.ts",
+            "tsConfig": "projects/angular-block-ui-dynamic/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-block-ui-dynamic/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-block-ui-dynamic/tsconfig.lib.json",
+              "projects/angular-block-ui-dynamic/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-block-ui-dynamic-app"
