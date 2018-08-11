@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'block-ui-dynamic',
-  template: `
-    <p>
-      angular-block-ui-dynamic works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './angular-block-ui-dynamic.component.html',
+  styleUrls: ['./angular-block-ui-dynamic.component.css']
 })
-export class AngularBlockUiDynamicComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class AngularBlockUiDynamicComponent {
+  @Input() visible: boolean;
 }
