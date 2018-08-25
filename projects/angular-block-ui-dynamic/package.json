@@ -1,8 +1,26 @@
 {
   "name": "angular-block-ui-dynamic",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "description": "Block-UI dynamic for Angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashfaqch/angular-block-ui-dynamic.git"
+  },
+  "keywords": [
+    "angular",
+    "block-ui",
+    "ui-block",
+    "block ui",
+    "blockui"
+  ],
+  "author": "Ash",
+  "license": "MIT",
+  "homepage": "https://github.com/ashfaqch/angular-block-ui-dynamic",
+  "bugs": {
+    "url": "https://github.com/ashfaqch/angular-block-ui-dynamic/issues"
+  },
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0"
   }
 }

@@ -23,8 +23,7 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26",
-    "angular-block-ui-dynamic": "file:dist/angular-block-ui-dynamic/angular-block-ui-dynamic-0.0.1.tgz"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.6",
