@@ -1,9 +1,5 @@
 # Angular Block-UI Dynamic
 
-## Demo
-
-https://stackblitz.com/github/ashfaqch/angular-block-ui-dynamic-demo
-
 ## Install
 
 ```bash
@@ -12,7 +8,7 @@ npm install angular-block-ui-dynamic --save
 
 ## Quick start
 
-**In your application root module definition add import `AngularBlockUiDynamicModule` and the plugin you want to use**
+**Import module `AngularBlockUiDynamicModule` in your application root @NgModule**
 
 ```typescript
 import { AngularBlockUiDynamicModule } from 'angular-block-ui-dynamic';
@@ -31,8 +27,12 @@ import { AngularBlockUiDynamicModule } from 'angular-block-ui-dynamic';
 export class AppModule { }
 ```
 
-**Add to the html template to display block ui**
+**Use in your html template to display block UI**
 
 ```html
     <block-ui-dynamic [visible]='true Or false'>Please wait...</block-ui-dynamic>
 ```
+
+## Demo
+
+https://stackblitz.com/github/ashfaqch/angular-block-ui-dynamic-demo
